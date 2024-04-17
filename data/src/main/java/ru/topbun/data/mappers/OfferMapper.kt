@@ -1,7 +1,7 @@
 package ru.topbun.data.mappers
 
-import ru.topbun.aviasels_api.entities.offer.OfferDto
-import ru.topbun.aviasels_api.entities.offer.OfferResponse
+import ru.topbun.api.entities.offer.OfferDto
+import ru.topbun.api.entities.offer.OfferResponse
 import ru.topbun.domain.entities.OfferEntity
 
 

@@ -1,4 +1,4 @@
-package ru.topbun.aviasales_api
+package ru.topbun.data
 
 import org.junit.Test
 

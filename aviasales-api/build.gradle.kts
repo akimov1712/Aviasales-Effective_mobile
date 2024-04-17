@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "ru.topbun.aviasales_api"
+    namespace = "ru.topbun.api"
     compileSdk = 34
 
     defaultConfig {
@@ -36,8 +36,8 @@ dependencies {
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-
     implementation(libs.kotlin.coroutines)
+
     api(libs.retrofit)
     implementation(libs.retrofitGson)
     implementation(libs.okhttpInterceptor)

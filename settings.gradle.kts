@@ -22,6 +22,6 @@ dependencyResolutionManagement {
 rootProject.name = "Aviasales-Effective_mobile"
 include(":app")
 include(":domain")
-include(":data")
 include(":common")
 include(":aviasales-api")
+include(":data")

@@ -11,21 +11,10 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
-    @Inject
-    lateinit var repository: AviasalesRepositoryImpl
-
-    private val component by lazy {
-        (application as App).component
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
-        component.inject(this)
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        lifecycleScope.launch {
-            val result = repository.getOffers()
-            Log.d("RESULT", result.toString())
-        }
+
     }
 }

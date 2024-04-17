@@ -1,4 +1,4 @@
-package ru.topbun.aviasales_api.entities.detailTicket
+package ru.topbun.api.entities.detailTicket
 
 import com.google.gson.annotations.SerializedName
 

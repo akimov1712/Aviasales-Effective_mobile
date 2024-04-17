@@ -53,5 +53,6 @@ dependencies {
 
     implementation(project(":common"))
     implementation(project(":data"))
+    implementation(project(":aviasales-api"))
 
 }

@@ -1,4 +1,4 @@
-package ru.topbun.aviasales_api
+package ru.topbun.api
 
 import com.google.gson.JsonIOException
 import com.google.gson.JsonParseException

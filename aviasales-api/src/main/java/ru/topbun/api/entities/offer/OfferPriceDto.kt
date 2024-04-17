@@ -1,8 +1,9 @@
-package ru.topbun.aviasales_api.entities.detailTicket
+package ru.topbun.api.entities.offer
 
 import com.google.gson.annotations.SerializedName
 
-data class PriceDto(
+data class OfferPriceDto(
+
     @SerializedName("value")
     val value: Int
 )

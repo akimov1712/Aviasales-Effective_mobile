@@ -2,7 +2,7 @@ package ru.topbun.aviasales_effective_mobile.di
 
 import dagger.Module
 import dagger.Provides
-import ru.topbun.aviasels_api.ApiFactory
+import ru.topbun.api.ApiFactory
 
 @Module
 class DataModule {

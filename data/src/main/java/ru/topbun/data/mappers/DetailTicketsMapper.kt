@@ -1,7 +1,7 @@
 package ru.topbun.data.mappers
 
-import ru.topbun.aviasels_api.entities.detailTicket.DetailTicketDto
-import ru.topbun.aviasels_api.entities.detailTicket.DetailTicketsResponse
+import ru.topbun.api.entities.detailTicket.DetailTicketDto
+import ru.topbun.api.entities.detailTicket.DetailTicketsResponse
 import ru.topbun.domain.entities.detailTicket.AirPointEntity
 import ru.topbun.domain.entities.detailTicket.DetailTicketEntity
 import ru.topbun.domain.entities.detailTicket.HandLuggageEntity

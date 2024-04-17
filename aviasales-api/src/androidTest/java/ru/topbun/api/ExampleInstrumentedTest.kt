@@ -1,4 +1,4 @@
-package ru.topbun.aviasales_api
+package ru.topbun.api
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("ru.topbun.aviasales_api.test", appContext.packageName)
+        assertEquals("ru.topbun.api.test", appContext.packageName)
     }
 }

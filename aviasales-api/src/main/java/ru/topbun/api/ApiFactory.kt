@@ -1,4 +1,4 @@
-package ru.topbun.aviasales_api
+package ru.topbun.api
 
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient

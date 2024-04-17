@@ -1,11 +1,11 @@
-package ru.topbun.aviasales_api
+package ru.topbun.api
 
 import kotlinx.coroutines.CoroutineScope
 import retrofit2.Response
 import retrofit2.http.GET
-import ru.topbun.aviasels_api.entities.detailTicket.DetailTicketsResponse
-import ru.topbun.aviasels_api.entities.offer.OfferResponse
-import ru.topbun.aviasels_api.entities.tickets.TicketResponse
+import ru.topbun.api.entities.detailTicket.DetailTicketsResponse
+import ru.topbun.api.entities.offer.OfferResponse
+import ru.topbun.api.entities.tickets.TicketResponse
 
 interface AviasalesApi {
 
