@@ -15,6 +15,8 @@ dagger = "2.51"
 navComponent = "2.7.7"
 retrofit = "2.11.0"
 okhttp = "4.12.0"
+jetbrainsKotlinJvm = "1.9.0"
+kotlin-coroutine = "1.8.1-Beta"
 
 
 [libraries]
@@ -26,6 +28,8 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+kotlin-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlin-coroutine" }
 
 dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
 daggerCompiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
@@ -42,4 +46,6 @@ androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 navSafeArgs = { id = "androidx.navigation.safeargs", version.ref = "navSafeArgs" }
+jetbrainsKotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
 
