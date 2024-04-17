@@ -10,7 +10,8 @@ java {
 
 dependencies{
     implementation(libs.kotlin.coroutines)
-    implementation(libs.retrofit)
+    api(libs.retrofit)
     implementation(libs.retrofitGson)
     implementation(libs.okhttpInterceptor)
+    implementation(project(":common"))
 }

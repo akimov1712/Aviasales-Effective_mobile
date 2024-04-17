@@ -12,4 +12,8 @@ dependencies{
     implementation(libs.kotlin.coroutines)
     implementation(libs.dagger)
     implementation(libs.daggerCompiler)
+
+    api(project(":domain"))
+    api(project(":aviasales-api"))
+    implementation(project(":common"))
 }

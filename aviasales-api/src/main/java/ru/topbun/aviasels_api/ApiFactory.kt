@@ -26,5 +26,5 @@ object ApiFactory {
         .baseUrl(BASE_URL)
         .build()
 
-     val aviasalesApi = retrofit.create(AviasalesApi::class.java)
+    val aviasalesApi = retrofit.create(AviasalesApi::class.java)
 }
