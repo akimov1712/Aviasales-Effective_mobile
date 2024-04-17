@@ -31,8 +31,8 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 
 kotlin-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlin-coroutine" }
 
-dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
-daggerCompiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
+dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+daggerCompiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
 
 navigationFragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navComponent" }
 navigationUi = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navComponent" }

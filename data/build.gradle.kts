@@ -1,6 +1,7 @@
 plugins {
     id("java-library")
     alias(libs.plugins.jetbrainsKotlinJvm)
+    alias(libs.plugins.ksp)
 }
 
 java {
@@ -10,8 +11,9 @@ java {
 
 dependencies{
     implementation(libs.kotlin.coroutines)
+
     implementation(libs.dagger)
-    implementation(libs.daggerCompiler)
+    ksp(libs.daggerCompiler)
 
     api(project(":domain"))
     api(project(":aviasales-api"))

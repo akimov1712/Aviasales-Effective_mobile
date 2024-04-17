@@ -1,4 +1,4 @@
-package ru.topbun.aviasels_api
+package ru.topbun.aviasales_api
 
 import kotlinx.coroutines.CoroutineScope
 import retrofit2.Response

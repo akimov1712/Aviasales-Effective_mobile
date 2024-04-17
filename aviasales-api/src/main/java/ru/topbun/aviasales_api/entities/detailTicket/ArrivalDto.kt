@@ -1,8 +1,8 @@
-package ru.topbun.aviasels_api.entities.detailTicket
+package ru.topbun.aviasales_api.entities.detailTicket
 
 import com.google.gson.annotations.SerializedName
 
-data class DepartureDto(
+data class ArrivalDto(
     @SerializedName("airport")
     val airport: String,
     @SerializedName("date")

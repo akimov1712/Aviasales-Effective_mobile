@@ -2,14 +2,10 @@ package ru.topbun.data.mappers
 
 import ru.topbun.aviasels_api.entities.detailTicket.DetailTicketDto
 import ru.topbun.aviasels_api.entities.detailTicket.DetailTicketsResponse
-import ru.topbun.aviasels_api.entities.tickets.TicketResponse
-import ru.topbun.aviasels_api.entities.tickets.TicketsDto
-import ru.topbun.domain.entities.TicketEntity
 import ru.topbun.domain.entities.detailTicket.AirPointEntity
 import ru.topbun.domain.entities.detailTicket.DetailTicketEntity
 import ru.topbun.domain.entities.detailTicket.HandLuggageEntity
 import ru.topbun.domain.entities.detailTicket.LuggageEntity
-import sun.jvm.hotspot.code.CompressedStream.L
 
 
 internal fun DetailTicketsResponse.toListEntity() = this.tickets.map { it.toEntity() }

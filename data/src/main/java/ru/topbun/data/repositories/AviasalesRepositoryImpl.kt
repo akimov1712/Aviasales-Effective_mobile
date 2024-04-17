@@ -2,8 +2,6 @@ package ru.topbun.data.repositories
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import retrofit2.Response
-import ru.topbun.aviasels_api.AviasalesApi
 import ru.topbun.common.ClientException
 import ru.topbun.common.ConnectedException
 import ru.topbun.common.ServerException

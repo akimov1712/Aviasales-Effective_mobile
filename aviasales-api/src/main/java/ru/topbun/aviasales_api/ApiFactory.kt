@@ -1,4 +1,4 @@
-package ru.topbun.aviasels_api
+package ru.topbun.aviasales_api
 
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -23,6 +23,7 @@ object ApiFactory {
 
     private val retrofit = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create())
+        .client(createOkHttpClient())
         .baseUrl(BASE_URL)
         .build()
 

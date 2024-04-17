@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.jetbrainsKotlinJvm) apply false
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -46,6 +48,10 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    implementation(libs.dagger)
+    ksp(libs.daggerCompiler)
+
+    implementation(project(":common"))
     implementation(project(":data"))
 
 }
