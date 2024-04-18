@@ -24,11 +24,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_18
+        targetCompatibility = JavaVersion.VERSION_18
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "18"
     }
 }
 
@@ -41,5 +41,5 @@ dependencies {
     api(libs.retrofit)
     implementation(libs.retrofitGson)
     implementation(libs.okhttpInterceptor)
-    implementation(project(":common"))
+    implementation(project(":core:common"))
 }

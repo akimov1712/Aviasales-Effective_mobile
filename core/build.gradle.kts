@@ -1,22 +1,17 @@
 plugins {
-    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    alias(libs.plugins.jetbrainsKotlinJvm) apply false
-    alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "ru.topbun.aviasales_effective_mobile"
+    namespace = "ru.topbun.core"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ru.topbun.aviasales_effective_mobile"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -29,11 +24,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_18
-        targetCompatibility = JavaVersion.VERSION_18
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "18"
+        jvmTarget = "1.8"
     }
 }
 
@@ -42,17 +37,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    implementation(libs.dagger)
-    ksp(libs.daggerCompiler)
-    implementation(project(":core"))
-
-    implementation(project(":data"))
-    implementation(project(":aviasales-api"))
-
 }

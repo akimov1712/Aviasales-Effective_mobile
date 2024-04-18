@@ -1,0 +1,9 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_cheap_aviatickets">Поиск дешевых авиабилетов</string>
+    <string name="from_moscow">Откуда - Москва</string>
+    <string name="to_turkey">Куда - Турция</string>
+    <string name="music_flying">Музыкально отлететь</string>
+    <string name="shwo_all_tours">Показать все места</string>
+</resources>

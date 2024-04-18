@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AviasalesEffective_mobile" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.AviasalesEffective_mobile" parent="Base.Theme.AviasalesEffective_mobile" />
+
+    <style name="style_edit_text" parent="button_text_1">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/grey6</item>
+    </style>
+
+</resources>

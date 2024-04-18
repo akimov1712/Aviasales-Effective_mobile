@@ -22,6 +22,11 @@ dependencyResolutionManagement {
 rootProject.name = "Aviasales-Effective_mobile"
 include(":app")
 include(":domain")
-include(":common")
 include(":aviasales-api")
 include(":data")
+include(":features")
+include(":features:avia-tickets")
+include(":core")
+include(":core:android")
+include(":core:common")
+include(":features:choice-derection")
