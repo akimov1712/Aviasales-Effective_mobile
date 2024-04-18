@@ -1,0 +1,9 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="from_moscow">Откуда - Москва</string>
+    <string name="to_turkey">Куда - Турция</string>
+    <string name="hard_route">Сложный\nмаршрут</string>
+    <string name="Anywhere">Куда угодно</string>
+    <string name="weekend">Выходные</string>
+    <string name="hot_ticket">Горячие\nбилеты</string>
+</resources>
