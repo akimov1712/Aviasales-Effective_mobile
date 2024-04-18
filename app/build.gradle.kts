@@ -50,9 +50,17 @@ dependencies {
 
     implementation(libs.dagger)
     ksp(libs.daggerCompiler)
-    implementation(project(":core"))
 
-    implementation(project(":data"))
+
+    implementation(project(":core"))
+    implementation(project(":core:android"))
+    implementation(project(":core:common"))
+    implementation(project(":domain"))
     implementation(project(":aviasales-api"))
+    implementation(project(":data"))
+    implementation(project(":features"))
+    implementation(project(":features:avia-tickets"))
+    implementation(project(":features:choice-derection"))
+    implementation(project(":features:selected-tour"))
 
 }

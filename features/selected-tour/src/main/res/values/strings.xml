@@ -1,0 +1,9 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="from_moscow">Откуда - Москва</string>
+    <string name="to_turkey">Куда - Турция</string>
+    <string name="direct_flights">Прямые рельсы</string>
+    <string name="show_all">Показать все</string>
+    <string name="show_all_tickets">Посмотреть все билеты</string>
+</resources>

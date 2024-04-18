@@ -12,4 +12,13 @@
         <item name="android:textColorHint">@color/grey6</item>
     </style>
 
+    <style name="style_chip_button" parent="button_text_1">
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableTint">@color/grey7</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:background">@drawable/background_rounded_50</item>
+        <item name="android:backgroundTint">@color/grey3</item>
+    </style>
+
 </resources>
