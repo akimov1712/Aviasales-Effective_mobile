@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+    android:id="@+id/tv_tag"
+    style="@style/title_4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:translationZ="10dp"
+    android:background="@drawable/background_rounded_50"
+    android:backgroundTint="@color/blue"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="2dp"
+    android:text="Прилет вечером"
+    android:textColor="@color/white" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="24dp"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/background_rounded_8"
+    android:backgroundTint="@color/grey1">
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="8 566 ₽"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/background_rounded_50"
+        android:backgroundTint="@color/red"
+        app:layout_constraintStart_toStartOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+    <TextView
+        android:id="@+id/tv_time_from"
+        style="@style/title_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="17:45"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tv_from"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+
+    <TextView
+        android:id="@+id/tv_from"
+        style="@style/title_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DME"
+        android:textColor="@color/grey6"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/tv_time_from"
+        app:layout_constraintStart_toStartOf="@+id/tv_time_from"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_from" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="–"
+        android:textColor="@color/grey6"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_time_from"
+        app:layout_constraintStart_toEndOf="@+id/tv_time_from"
+        app:layout_constraintTop_toTopOf="@+id/tv_time_from" />
+
+
+    <TextView
+        android:id="@+id/tv_time_to"
+        style="@style/title_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:35"
+        android:textColor="@color/white"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_to"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+
+    <TextView
+        android:id="@+id/tv_to"
+        style="@style/title_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AER"
+        android:textColor="@color/grey6"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/tv_time_to"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_to" />
+
+
+    <TextView
+        android:id="@+id/tv_information"
+        style="@style/title_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="3.5ч в пути / Без пересадок"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_time_to"
+        app:layout_constraintTop_toTopOf="@+id/tv_time_to" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
