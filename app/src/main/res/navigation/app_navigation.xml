@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/tabsFragment">
+
+    <fragment
+        android:id="@+id/tabsFragment"
+        android:name="ru.topbun.tabs.TabsFragment"
+        android:label="TabsFragment" >
+        <action
+            android:id="@+id/action_tabsFragment_to_choiceDirectionFragment"
+            app:destination="@id/choiceDirectionFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/choiceDirectionFragment"
+        android:name="ru.topbun.choice_derection.ChoiceDirectionFragment"
+        android:label="ChoiceDirectionFragment" />
+</navigation>

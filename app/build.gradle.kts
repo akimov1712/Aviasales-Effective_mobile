@@ -51,6 +51,8 @@ dependencies {
     implementation(libs.dagger)
     ksp(libs.daggerCompiler)
 
+    implementation(libs.navigationUi)
+    implementation(libs.navigationFragment)
 
     implementation(project(":core"))
     implementation(project(":core:android"))
@@ -62,5 +64,7 @@ dependencies {
     implementation(project(":features:avia-tickets"))
     implementation(project(":features:choice-derection"))
     implementation(project(":features:selected-tour"))
-
+    implementation(project(":features:show-tickets"))
+    implementation(project(":features:plug"))
+    implementation(project(":features:tabs"))
 }

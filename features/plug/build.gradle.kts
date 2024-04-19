@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "ru.topbun.android"
+    namespace = "ru.topbun.plug"
     compileSdk = 34
 
     defaultConfig {
@@ -30,9 +30,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures{
-        viewBinding = true
-    }
 }
 
 dependencies {
@@ -44,7 +41,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation(libs.navigationUi)
-    implementation(libs.navigationFragment)
-
+    implementation(project(":core:android"))
 }

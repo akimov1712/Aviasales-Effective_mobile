@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "ru.topbun.android"
+    namespace = "ru.topbun.tabs"
     compileSdk = 34
 
     defaultConfig {
@@ -47,4 +47,9 @@ dependencies {
     implementation(libs.navigationUi)
     implementation(libs.navigationFragment)
 
+    implementation(project(":core:android"))
+    implementation(project(":features:show-tickets"))
+    implementation(project(":features:plug"))
+    implementation(project(":features:selected-tour"))
+    implementation(project(":features:avia-tickets"))
 }

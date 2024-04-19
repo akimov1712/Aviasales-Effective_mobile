@@ -3,7 +3,7 @@ package ru.topbun.aviasales_effective_mobile.di
 import android.app.Application
 import dagger.BindsInstance
 import dagger.Component
-import ru.topbun.aviasales_effective_mobile.MainActivity
+import ru.topbun.aviasales_effective_mobile.SingleActivity
 
 @ApplicationScope
 @Component(
@@ -14,7 +14,7 @@ import ru.topbun.aviasales_effective_mobile.MainActivity
 )
 interface AppComponent {
 
-    fun inject(activity: MainActivity)
+    fun inject(activity: SingleActivity)
 
     @Component.Factory
     interface Factory {

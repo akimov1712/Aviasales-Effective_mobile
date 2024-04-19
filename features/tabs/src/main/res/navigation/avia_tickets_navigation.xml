@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/avia_tickets_navigation"
+    app:startDestination="@id/aviaTicketFragment">
+
+    <fragment
+        android:id="@+id/aviaTicketFragment"
+        android:name="ru.topbun.avia_tickets.AviaTicketFragment"
+        android:label="AviaTicketFragment" >
+        <action
+            android:id="@+id/action_aviaTicketFragment_to_selectedTourFragment"
+            app:destination="@id/selectedTourFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedTourFragment"
+        android:name="ru.topbun.selected_tour.SelectedTourFragment"
+        android:label="fragment_selected_tour"
+        tools:layout="@layout/fragment_selected_tour" >
+        <action
+            android:id="@+id/action_selectedTourFragment_to_showTicketsFragment"
+            app:destination="@id/showTicketsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showTicketsFragment"
+        android:name="ru.topbun.show_tickets.ShowTicketsFragment"
+        android:label="ShowTicketsFragment" />
+</navigation>

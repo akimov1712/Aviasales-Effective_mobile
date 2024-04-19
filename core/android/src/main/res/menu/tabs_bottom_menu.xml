@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/avia_tickets_navigation"
+        android:title="Авиабилеты"
+        android:icon="@drawable/ic_airplane"/>
+
+    <item
+        android:id="@+id/hotels_navigation"
+        android:title="Отели"
+        android:icon="@drawable/ic_bed"/>
+
+    <item
+        android:id="@+id/point_navigation"
+        android:title="Короче"
+        android:icon="@drawable/ic_point"/>
+
+    <item
+        android:id="@+id/notify_navigation"
+        android:title="Подписки"
+        android:icon="@drawable/ic_notify"/>
+
+    <item
+        android:id="@+id/person_navigation"
+        android:title="Профиль"
+        android:icon="@drawable/ic_person"/>
+
+</menu>
