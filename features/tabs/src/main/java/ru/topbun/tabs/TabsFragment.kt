@@ -1,8 +1,10 @@
 package ru.topbun.tabs
 
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import dagger.hilt.android.AndroidEntryPoint
+import ru.topbun.avia_tickets.AviaTicketViewModel
 import ru.topbun.presentation.base.BaseFragment
 import ru.topbun.tabs.databinding.FragmentTabsBinding
 

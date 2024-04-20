@@ -2,7 +2,7 @@ package ru.topbun.common
 
 open class AppException(): RuntimeException()
 
-class ParseBackendResponseException(override val message:String = ""): AppException()
+class ParseBackendResponseException(override val message:String = "Ошибка при получении данных"): AppException()
 
 class ConnectedException(override val message:String = ""): AppException()
 

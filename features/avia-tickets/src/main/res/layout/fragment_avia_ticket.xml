@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+        android:id="@+id/cv_choice_path"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="16dp"
@@ -68,6 +68,8 @@
                     style="@style/style_edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
+                    android:clickable="false"
+                    android:focusable="false"
                     android:layout_weight="1"
                     android:hint="@string/from_moscow" />
 
@@ -82,6 +84,8 @@
                     style="@style/style_edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
+                    android:clickable="false"
+                    android:focusable="false"
                     android:layout_weight="1"
                     android:hint="@string/to_turkey" />
 
@@ -116,6 +120,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:listitem="@layout/item_tour" />
+
+    <ProgressBar
+        android:id="@+id/loader_tours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/blue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_show_all_tours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_show_all_tours"

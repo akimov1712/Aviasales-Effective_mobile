@@ -7,8 +7,8 @@ import ru.topbun.domain.entities.detailTicket.DetailTicketEntity
 
 interface AviaSalesRepository {
 
-    suspend fun getOffers(): Flow<List<OfferEntity>>
-    suspend fun getTicketsOffers(): Flow<List<TicketEntity>>
-    suspend fun getDetailTickets(): Flow<List<DetailTicketEntity>>
+    suspend fun getOffers(): List<OfferEntity>
+    suspend fun getTicketsOffers(): List<TicketEntity>
+    suspend fun getDetailTickets(): List<DetailTicketEntity>
 
 }
