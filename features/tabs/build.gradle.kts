@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
 }
 
 android {
@@ -47,7 +49,12 @@ dependencies {
     implementation(libs.navigationUi)
     implementation(libs.navigationFragment)
 
-    implementation(project(":core:android"))
+    implementation(libs.hilt)
+    ksp(libs.hiltCompiler)
+
+    implementation(project(":core:presentation"))
+    implementation(project(":core:theme"))
+
     implementation(project(":features:show-tickets"))
     implementation(project(":features:plug"))
     implementation(project(":features:selected-tour"))

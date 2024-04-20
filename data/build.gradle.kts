@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
 }
 
 android {
@@ -39,8 +40,8 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.kotlin.coroutines)
 
-    implementation(libs.dagger)
-    ksp(libs.daggerCompiler)
+    implementation(libs.hilt)
+    ksp(libs.hiltCompiler)
 
     api(project(":domain"))
     api(project(":aviasales-api"))

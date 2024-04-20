@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AviasalesEffective_mobile" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Theme.AviasalesEffective_mobile" parent="Base.Theme.AviasalesEffective_mobile" />
+
+    <style name="style_edit_text" parent="button_text_1">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/grey6</item>
+    </style>
+
+    <style name="style_chip_button" parent="button_text_1">
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableTint">@color/grey7</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:background">@drawable/background_rounded_50</item>
+        <item name="android:backgroundTint">@color/grey3</item>
+    </style>
+
+    <style name="app_bottom_bar_style">
+        <item name="itemTextColor">@color/selector_bottom_menu_color</item>
+        <item name="itemIconSize">28dp</item>
+        <item name="elevation">6dp</item>
+        <item name="android:paddingHorizontal">15dp</item>
+        <item name="android:background">@color/black</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemTextAppearanceActive">@style/tab_text</item>
+        <item name="itemTextAppearanceInactive">@style/tab_text</item>
+        <item name="itemActiveIndicatorStyle">@android:color/transparent</item>
+        <item name="itemHorizontalTranslationEnabled">false</item>
+        <item name="itemIconTint">@color/selector_bottom_menu_color</item>
+        <item name="itemRippleColor">@android:color/transparent</item>
+    </style>
+
+</resources>

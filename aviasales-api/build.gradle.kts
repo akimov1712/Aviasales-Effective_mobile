@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
 }
 
 android {
@@ -38,8 +40,12 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.kotlin.coroutines)
 
+    implementation(libs.hilt)
+    ksp(libs.hiltCompiler)
+
     api(libs.retrofit)
     implementation(libs.retrofitGson)
     implementation(libs.okhttpInterceptor)
     implementation(project(":core:common"))
+    implementation(project(":core:presentation"))
 }

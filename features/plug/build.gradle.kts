@@ -41,5 +41,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation(project(":core:android"))
+    implementation(project(":core:presentation"))
+    implementation(project(":core:theme"))
 }

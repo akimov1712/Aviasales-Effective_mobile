@@ -6,14 +6,14 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="8dp">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_preview"
         android:layout_width="133dp"
         android:layout_height="133dp"
+        android:clipToOutline="true"
         android:background="@drawable/background_rounded_16"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/image_budapest" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_title"

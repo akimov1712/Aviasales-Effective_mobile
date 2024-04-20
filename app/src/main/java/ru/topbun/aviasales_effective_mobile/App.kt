@@ -1,11 +1,7 @@
 package ru.topbun.aviasales_effective_mobile
 
 import android.app.Application
-import ru.topbun.aviasales_effective_mobile.di.DaggerAppComponent
+import dagger.hilt.android.HiltAndroidApp
 
-class App: Application() {
-
-    val component by lazy {
-        DaggerAppComponent.factory().create(this)
-    }
-}
+@HiltAndroidApp
+class App: Application()

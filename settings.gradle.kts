@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 rootProject.name = "Aviasales-Effective_mobile"
 include(":app")
 include(":core")
-include(":core:android")
+include(":core:presentation")
 include(":core:common")
 include(":domain")
 include(":aviasales-api")
@@ -34,3 +34,4 @@ include(":features:selected-tour")
 include(":features:show-tickets")
 include(":features:plug")
 include(":features:tabs")
+include(":core:theme")
