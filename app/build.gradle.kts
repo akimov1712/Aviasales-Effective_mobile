@@ -54,9 +54,8 @@ dependencies {
 
     implementation(libs.navigationUi)
     implementation(libs.navigationFragment)
+
     implementation(project(":core:presentation"))
-
-
     implementation(project(":core:common"))
     implementation(project(":domain"))
     implementation(project(":aviasales-api"))
@@ -67,4 +66,5 @@ dependencies {
     implementation(project(":features:show-tickets"))
     implementation(project(":features:plug"))
     implementation(project(":features:tabs"))
+    implementation(project(":core:theme"))
 }

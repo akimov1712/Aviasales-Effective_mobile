@@ -51,4 +51,6 @@ dependencies {
     implementation(libs.hilt)
     ksp(libs.hiltCompiler)
 
+    implementation(project(":core:theme"))
+
 }

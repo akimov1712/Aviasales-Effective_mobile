@@ -11,6 +11,8 @@
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textColorHint">@color/grey6</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text</item>
     </style>
 
     <style name="style_chip_button" parent="button_text_1">

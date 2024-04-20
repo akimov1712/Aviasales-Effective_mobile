@@ -9,6 +9,9 @@
         android:id="@+id/aviaTicketFragment"
         android:name="ru.topbun.avia_tickets.AviaTicketFragment"
         android:label="AviaTicketFragment" >
+        <action
+            android:id="@+id/action_aviaTicketFragment_to_selectedTourFragment"
+            app:destination="@id/selectedTourFragment" />
     </fragment>
     <fragment
         android:id="@+id/selectedTourFragment"

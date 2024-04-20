@@ -15,5 +15,7 @@
     <dialog
         android:id="@+id/choiceDirectionFragment"
         android:name="ru.topbun.choice_derection.ChoiceDirectionFragment"
-        android:label="ChoiceDirectionFragment" />
+        android:label="ChoiceDirectionFragment">
+
+    </dialog>
 </navigation>
