@@ -6,12 +6,11 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="8dp">
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_preview"
         android:layout_width="133dp"
         android:layout_height="133dp"
-        android:clipToOutline="true"
-        android:background="@drawable/background_rounded_16"
+        app:shapeAppearance="@style/rounded_image_16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.AppCompatButton xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/title_3"
+    android:id="@+id/btn_back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:text="Фрагмент заглушка"
+    android:text="Фрагмент заглушка\nНажми чтобы выйти"
     android:textColor="@color/grey7"
     android:gravity="center"
     tools:context=".PlugFragment"/>

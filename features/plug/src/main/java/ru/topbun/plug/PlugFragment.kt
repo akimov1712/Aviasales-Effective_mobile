@@ -5,15 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import ru.topbun.plug.databinding.FragmentPlugBinding
+import ru.topbun.presentation.base.BaseFragment
 
 
-class PlugFragment : Fragment() {
+class PlugFragment : BaseFragment<FragmentPlugBinding>(FragmentPlugBinding::inflate) {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_plug, container, false)
+    override fun setListenersInView() {
+        super.setListenersInView()
+        binding.btnBack.setOnClickListener{
+            findNavController().navigateUp()
+        }
     }
-
 }

@@ -4,9 +4,6 @@
     android:id="@+id/tabs_navigation"
     app:startDestination="@id/avia_tickets_navigation">
 
-    <include
-        app:graph="@navigation/avia_tickets_navigation" />
-
     <fragment
         android:id="@+id/hotels_navigation"
         android:name="ru.topbun.plug.PlugFragment"
@@ -26,6 +23,11 @@
         android:id="@+id/person_navigation"
         android:name="ru.topbun.plug.PlugFragment"
         android:label="PlugFragment" />
+
+    <fragment
+        android:id="@+id/avia_tickets_navigation"
+        android:name="ru.topbun.avia_tickets.AviaTicketFragment"
+        android:label="AviaTicketFragment" />
 
 
 </navigation>

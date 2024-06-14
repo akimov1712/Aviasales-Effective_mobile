@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/tabsFragment">
+
+    <fragment
+        android:id="@+id/tabsFragment"
+        android:name="ru.topbun.tabs.TabsFragment"
+        android:label="TabsFragment"
+        tools:layout="@layout/fragment_tabs">
+        <action
+            android:id="@+id/action_tabsFragment_to_choiceDirectionFragment"
+            app:destination="@id/choiceDirectionFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/choiceDirectionFragment"
+        android:name="ru.topbun.choice_derection.ChoiceDirectionFragment"
+        android:label="ChoiceDirectionFragment"
+        tools:layout="@layout/fragment_choice_direction">
+        <action
+            android:id="@+id/action_choiceDirectionFragment_to_plugFragment"
+            app:destination="@id/plugFragment" />
+        <action
+            android:id="@+id/action_choiceDirectionFragment_to_selectedTourFragment"
+            app:destination="@id/selectedTourFragment" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/plugFragment"
+        android:name="ru.topbun.plug.PlugFragment"
+        android:label="PlugFragment"
+        tools:layout="@layout/fragment_plug">
+    </fragment>
+    <fragment
+        android:id="@+id/selectedTourFragment"
+        android:name="ru.topbun.selected_tour.SelectedTourFragment"
+        android:label="fragment_selected_tour"
+        tools:layout="@layout/fragment_selected_tour">
+        <argument
+            android:name="nameCountry"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>

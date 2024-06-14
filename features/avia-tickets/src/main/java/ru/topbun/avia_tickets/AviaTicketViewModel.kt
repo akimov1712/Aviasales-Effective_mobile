@@ -6,6 +6,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import ru.topbun.avia_tickets.navigation.AviaTicketsNavigation
 import ru.topbun.common.ClientException
 import ru.topbun.common.ConnectedException
 import ru.topbun.common.ParseBackendResponseException
@@ -15,11 +16,16 @@ import javax.inject.Inject
 
 @HiltViewModel
 class AviaTicketViewModel @Inject constructor(
-    private val getOffersUseCase: GetOffersUseCase
+    private val getOffersUseCase: GetOffersUseCase,
+    private val navigator: AviaTicketsNavigation
 ): ViewModel() {
 
     private val _state = MutableStateFlow<AviaTicketsState>(AviaTicketsState.Loading())
     val state get() = _state.asStateFlow()
+
+    fun openChoiceDirection(){
+        navigator.openChoiceDirection()
+    }
 
     private fun getOffers() = viewModelScope.launch {
         try {

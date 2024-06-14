@@ -53,16 +53,31 @@
                 android:layout_height="1dp"
                 android:background="@color/grey5" />
 
-
-            <EditText
-                android:id="@+id/et_to"
-                style="@style/style_edit_text"
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
+                android:gravity="center"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                android:drawableStart="@drawable/ic_search"
-                android:drawablePadding="8dp"
-                android:hint="@string/to_turkey" />
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_to"
+                    style="@style/style_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/to_turkey" />
+
+                <ImageButton
+                    android:id="@+id/btn_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_cancel"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -83,7 +98,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center"
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
             android:orientation="vertical">
 
             <ImageView
@@ -108,9 +126,12 @@
         <LinearLayout
             android:id="@+id/btn_anywhere"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <ImageView
@@ -135,9 +156,12 @@
         <LinearLayout
             android:id="@+id/btn_weekend"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <ImageView
@@ -162,9 +186,12 @@
         <LinearLayout
             android:id="@+id/btn_hot_ticket"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <ImageView
@@ -190,16 +217,15 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_routes"
+        android:id="@+id/rv_direction"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginHorizontal="16dp"
         android:paddingVertical="8dp"
-        android:paddingHorizontal="16dp"
         android:background="@drawable/background_rounded_16"
         android:backgroundTint="@color/grey3"
-        tools:listitem="@layout/item_route"
+        tools:listitem="@layout/item_direction"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

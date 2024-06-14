@@ -38,5 +38,16 @@
         <item name="itemIconTint">@color/selector_bottom_menu_color</item>
         <item name="itemRippleColor">@android:color/transparent</item>
     </style>
+    
+    <style name="rounded_image_8">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+
+    <style name="rounded_image_16">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
 
 </resources>

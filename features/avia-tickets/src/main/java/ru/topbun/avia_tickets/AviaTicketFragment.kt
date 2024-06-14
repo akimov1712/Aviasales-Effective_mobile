@@ -1,16 +1,18 @@
 package ru.topbun.avia_tickets
 
 import android.widget.Toast
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.net.toUri
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.NavDeepLinkRequest
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import ru.topbun.avia_tickets.adapter.ToursAdapter
 import ru.topbun.avia_tickets.databinding.FragmentAviaTicketBinding
 import ru.topbun.presentation.base.BaseFragment
-import ru.topbun.presentation.findTopNavController
 
 @AndroidEntryPoint
 class AviaTicketFragment :
@@ -25,7 +27,7 @@ class AviaTicketFragment :
         with(binding) {
             etTo.setOnFocusChangeListener { v, hasFocus ->
                 if (hasFocus) {
-                    findTopNavController().navigate(ru.topbun.theme.R.id.choiceDirectionFragment)
+                    viewModel.openChoiceDirection()
                     etTo.clearFocus()
                 }
             }

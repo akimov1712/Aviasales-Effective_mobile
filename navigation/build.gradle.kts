@@ -1,24 +1,20 @@
 plugins {
-    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    alias(libs.plugins.jetbrainsKotlinJvm) apply false
-    alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
+    alias(libs.plugins.ksp)
     alias(libs.plugins.navSafeArgs)
 }
 
 android {
-    namespace = "ru.topbun.aviasales_effective_mobile"
+    namespace = "ru.topbun.navigation"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ru.topbun.aviasales_effective_mobile"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -31,11 +27,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_18
-        targetCompatibility = JavaVersion.VERSION_18
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "18"
+        jvmTarget = "1.8"
     }
 }
 
@@ -44,8 +40,6 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -56,12 +50,6 @@ dependencies {
     implementation(libs.hilt)
     ksp(libs.hiltCompiler)
 
-    implementation(project(":navigation"))
-    implementation(project(":core:presentation"))
-    implementation(project(":core:common"))
-    implementation(project(":domain"))
-    implementation(project(":aviasales-api"))
-    implementation(project(":data"))
     implementation(project(":features:avia-tickets"))
     implementation(project(":features:choice-derection"))
     implementation(project(":features:selected-tour"))
